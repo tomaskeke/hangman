@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Luckiest+Guy&family=Sigmar+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="mockdata/CountryWorld.js"></script>
+    <title>HangMan</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div id="gameOver" class="hidden"></div>
+        <div class="getWord">
+        <button id="button">START</button>
+    </div>
+        <div class="hangman-card">
+            <div id="letterHint">
+                <ul id="list">
+                </ul>
+            <div id="error"></div>
+            </div>
+        </div>
+            <div id="usedLettersWrap">
+                <div id="lifeCount"></div>
+                <div id="usedLetters" class="hidden"></div>
+            </div>
+            <div class="inputWrap">
+                    <input type="text" id="guessBox" maxlength="1" placeholder="Guess">
+            </div>
+        
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
