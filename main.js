@@ -18,16 +18,18 @@ let lives
 let indexLives
 let showLives
 let usedLength = []
+let resultsArray = []
 let incorrectArray = []
 gameOverDiv.setAttribute("class", "hidden");
 
 function winner() {
     liList = [...ul.getElementsByTagName('li')]
-    let resultsArray = []
-
+    resultsArray = []
     liList.forEach(li => {
         resultsArray.push(li.textContent)
+      
         wordArray.join("");
+        
         if (resultsArray.length !== wordArray.length) return false;
         for (var i = 0; i < resultsArray.length; i++) {
             if (resultsArray[i] !== wordArray[i]) return false;
@@ -60,35 +62,44 @@ function gameOver() {
 // function winner(){
 
 // }
-function correct(indexArray, guess) {                                       // for every index in indexArray, get LI with same ID as index(li0,li1,li2)
+function correct() {                                       // for every index in indexArray, get LI with same ID as index(li0,li1,li2)
     indexArray.forEach(index => {
         const liValue = document.getElementById(index)
         liValue.textContent = guess;                                       // Adding guess to li, printing correct guessed letter.
     })
     winner()
 };
-
 function addUsedLetters() {                                                   // adding the guess to usedLetters array
-    if (usedLength.length < 10) {
         usedLetters.textContent = usedLength;
-    }
 };
 
 
-function incorrect(indexLives, showLives) {
-    console.log(usedLength)
-    // if guess does not match, it returns index of -1, using that to print the guess to usedLetters                                
+function preventMultiple () {
     if (usedLength.includes(guess)) {
         error.textContent = "character already used"
 
     } else {
+        usedLength.push(guess)
         error.textContent = ""
         lives -= 1;
-        usedLength.push(guess);
+        addUsedLetters();
     }
+   
+}
+
+function filterusedLength (){
+    if(usedLength !== wordArray){
+        preventMultiple();
+    }
+}
+
+
+
+function incorrect() {
+    // if guess does not match, it returns index of -1, using that to print the guess to usedLetters                                
     if ((indexLives === -1) && (lives > 0)) {
         showLives.textContent = ("You have " + lives + " Lives left!");
-        addUsedLetters();
+        filterusedLength();
     }
 
 };
@@ -103,8 +114,8 @@ function compareGuess() {                                                       
     }
     winner();
     gameOver();
-    incorrect(indexLives, showLives);
-    correct(indexArray, guess);
+    incorrect();
+    correct();
 };
 function getLives() {
     showCategory = document.createElement("div")                                                                 // Creating div to show how many lives you have left. Setting total of 10 lives.
@@ -128,9 +139,9 @@ function createList() {
         ul.appendChild(li);
         if (wordArray[i] === "-") {
             li.textContent = "-";
-        } else if (wordArray[i] === " ") {
-            li.innerHTML = "<br /><br />";
-        } else {
+        }else if(wordArray[i] === " "){
+            li.textContent = " ";
+        }else{
             li.textContent = "_";   
         }
     }
@@ -139,9 +150,17 @@ function createList() {
 };
 
 // take in letter, init compareGuess
-guessbox.addEventListener("input", (event) => {
+guessbox.addEventListener("input", guessletter = (event) => {
     guess = event.target.value.toLowerCase();
-    compareGuess(guess);
+    let letters = /^[A-Za-z]+$/
+    if(guess.match(letters)){
+        error.textContent = "";
+    }else {
+        event.target.value = "";
+        error.textContent = "Invalid guess - Only letters"
+        guessletter();
+    } 
+    compareGuess();
     guessbox.value = "";
 
 });
@@ -159,13 +178,6 @@ button.addEventListener('click', startGame = () => {
     };                                                                                     // Reset usedLetters on every new game
     randomWord = randomPick.word;                                                          // Selecting word property in arrayobject
     wordArray = randomWord.toLowerCase().split("");                                         // converting random word to array
-    for(i = 0; i < wordArray.length; i++){
-        if(wordArray[i] === " "){
-            li.innerHTML = "<br /><br />"
-            wordArray.splice(i, 1);
-        }
-    }
     createList();
-    console.log(randomWord)
 });
 

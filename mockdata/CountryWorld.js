@@ -28,7 +28,7 @@ const countryArray = [
         "hint": "F"
     },
     {
-        "word": "United States",
+        "word": "Unitedstates",
         "hint": "M"
     },
     {
@@ -46,10 +46,6 @@ const countryArray = [
     {
         "word": "Philippines",
         "hint": "M"
-    },
-    {
-        "word": "Czech Republic",
-        "hint": "F"
     },
     {
         "word": "Liberia",
@@ -136,7 +132,7 @@ const countryArray = [
         "hint": "F"
     },
     {
-        "word": "Czech Republic",
+        "word": "CzechRepublic",
         "hint": "M"
     },
     {
@@ -148,7 +144,7 @@ const countryArray = [
         "hint": "M"
     },
     {
-        "word": "Dominican Republic",
+        "word": "DominicanRepublic",
         "hint": "F"
     },
     {
@@ -216,7 +212,7 @@ const countryArray = [
         "hint": "M"
     },
     {
-        "word": "United Kingdom",
+        "word": "UnitedKingdom",
         "hint": "M"
     },
     {
@@ -232,7 +228,7 @@ const countryArray = [
         "hint": "F"
     },
     {
-        "word": "South Africa",
+        "word": "SouthAfrica",
         "hint": "F"
     },
     {
@@ -248,7 +244,7 @@ const countryArray = [
         "hint": "F"
     },
     {
-        "word": "South Africa",
+        "word": "SouthAfrica",
         "hint": "F"
     },
     {
@@ -284,7 +280,7 @@ const countryArray = [
         "hint": "M"
     },
     {
-        "word": "Ukraine",
+        "word": "dKraine",
         "hint": "M"
     },
     {
@@ -312,11 +308,11 @@ const countryArray = [
         "hint": "F"
     },
     {
-        "word": "United States",
+        "word": "Unitedstates",
         "hint": "M"
     },
     {
-        "word": "United States",
+        "word": "Unitedstates",
         "hint": "F"
     },
     {
@@ -348,10 +344,6 @@ const countryArray = [
         "hint": "F"
     },
     {
-        "word": "Czech Republic",
-        "hint": "F"
-    },
-    {
         "word": "Russia",
         "hint": "F"
     },
@@ -380,10 +372,6 @@ const countryArray = [
         "hint": "M"
     },
     {
-        "word": "Czech Republic",
-        "hint": "F"
-    },
-    {
         "word": "China",
         "hint": "M"
     },
@@ -408,7 +396,7 @@ const countryArray = [
         "hint": "F"
     },
     {
-        "word": "Czech Republic",
+        "word": "CzechRepublic",
         "hint": "M"
     },
     {
@@ -456,7 +444,7 @@ const countryArray = [
         "hint": "M"
     },
     {
-        "word": "South Africa",
+        "word": "SouthAfrica",
         "hint": "F"
     },
     {
@@ -544,10 +532,6 @@ const countryArray = [
         "hint": "M"
     },
     {
-        "word": "Democratic Republic of the Congo",
-        "hint": "M"
-    },
-    {
         "word": "Nigeria",
         "hint": "M"
     },
@@ -560,7 +544,7 @@ const countryArray = [
         "hint": "M"
     },
     {
-        "word": "Czech Republic",
+        "word": "CzechRepublic",
         "hint": "M"
     },
     {
@@ -620,7 +604,7 @@ const countryArray = [
         "hint": "M"
     },
     {
-        "word": "Czech Republic",
+        "word": "CzechRepublic",
         "hint": "M"
     },
     {
@@ -744,7 +728,7 @@ const countryArray = [
         "hint": "F"
     },
     {
-        "word": "North Korea",
+        "word": "NorthKorea",
         "hint": "M"
     },
     {
@@ -784,7 +768,7 @@ const countryArray = [
         "hint": "M"
     },
     {
-        "word": "South Africa",
+        "word": "SouthAfrica",
         "hint": "F"
     },
     {
@@ -816,7 +800,7 @@ const countryArray = [
         "hint": "M"
     },
     {
-        "word": "Costa Rica",
+        "word": "CostaRica",
         "hint": "F"
     },
     {
@@ -842,10 +826,6 @@ const countryArray = [
     {
         "word": "Sweden",
         "hint": "M"
-    },
-    {
-        "word": "Czech Republic",
-        "hint": "F"
     },
     {
         "word": "Nigeria",
@@ -976,7 +956,7 @@ const countryArray = [
         "hint": "F"
     },
     {
-        "word": "United States",
+        "word": "Unitedstates",
         "hint": "F"
     },
     {
@@ -984,11 +964,7 @@ const countryArray = [
         "hint": "F"
     },
     {
-        "word": "Czech Republic",
-        "hint": "M"
-    },
-    {
-        "word": "United States",
+        "word": "UnitedStates",
         "hint": "M"
     },
     {
@@ -1088,7 +1064,7 @@ const countryArray = [
         "hint": "M"
     },
     {
-        "word": "Czech Republic",
+        "word": "CzechRepublic",
         "hint": "M"
     },
     {
@@ -1112,7 +1088,7 @@ const countryArray = [
         "hint": "F"
     },
     {
-        "word": "United States",
+        "word": "UnitedStates",
         "hint": "F"
     },
     {
@@ -1152,7 +1128,7 @@ const countryArray = [
         "hint": "F"
     },
     {
-        "word": "United States",
+        "word": "UnitedStates",
         "hint": "F"
     },
     {
@@ -1180,7 +1156,7 @@ const countryArray = [
         "hint": "F"
     },
     {
-        "word": "South Africa",
+        "word": "SouthAfrica",
         "hint": "M"
     },
     {
@@ -1224,7 +1200,7 @@ const countryArray = [
         "hint": "F"
     },
     {
-        "word": "Costa Rica",
+        "word": "CostaRica",
         "hint": "F"
     },
     {
@@ -1258,10 +1234,6 @@ const countryArray = [
     {
         "word": "Philippines",
         "hint": "M"
-    },
-    {
-        "word": "Czech Republic",
-        "hint": "F"
     },
     {
         "word": "Indonesia",
@@ -1552,7 +1524,7 @@ const countryArray = [
         "hint": "F"
     },
     {
-        "word": "United States",
+        "word": "UnitedStates",
         "hint": "F"
     },
     {
@@ -1568,7 +1540,7 @@ const countryArray = [
         "hint": "F"
     },
     {
-        "word": "Czech Republic",
+        "word": "CzechRepublic",
         "hint": "M"
     },
     {
